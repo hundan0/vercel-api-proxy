@@ -1,5 +1,22 @@
 # vercel-api-proxy
-[English README](./README_EN.md)
+[English README](./README_EN.md)    
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------  
+Telegram免费代理：  
+
+免费送高速代理规则:    
+每分享一个人使用代理，可增加自己使用时间5天    
+怎么算分享成功呢？      
+
+你只需要把高速代理链接复制分享给需要的人，他开启使用后，你的代理免费使用时间就会自动增5天    
+
+tg://proxy?server=23.142.200.64&port=20020&secret=ee660371158145253e06e5355bf40f5e3c617a7572652e6d6963726f736f66742e636f6d    
+
+tg://proxy?server=23.142.200.64&port=20021&secret=ee66c371858445a53e06e5355bf40f8e5b617a7572652e6d6963726f736f66742e636f6d       
+
+tg://proxy?server=23.142.200.64&port=20022&secret=ee4111911bedcc4e6eab41dea7c22b3c2c617a7572652e6d6963726f736f66742e636f6d    
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------   
 
 本项目是vercel反向代理。完全免费，万能代理，可代理全网一切接口，包括openai、Midjourney、github、google、Telegram等等。http和https接口、单页面均可代理，在网络环境不好的情况下均可用。（直接浏览器打开代理页面的情况下，由于某些js和css的路径可能会不对造成访问不到不会有大的影响。）     
 
@@ -40,9 +57,8 @@ If you think this tool is good, please gently click the **Star** button in the u
 
 ## 示例
 例1     
-访问https://替换为你自己的域名.com/https/api.openai.com/v1/chat/completions 
+访问https://替换为你自己的域名/https/api.openai.com/v1/chat/completions 
 实际上会替换为https://api.openai.com/v1/chat/completions
-![demo1](img/demo1.png)
 
 如何在一些常见的开源项目中使用？
 一般开源项目都是引用的openai的库，可以看到里面有一个属性是api_base = os.environ.get("OPENAI_API_BASE", "https://api.openai.com/v1")
@@ -50,7 +66,7 @@ If you think this tool is good, please gently click the **Star** button in the u
 所以使用的时候只需要设置一下openai.api_base="https://你的域名/https/api.openai.com/v1" 就可以了
 
 例2   
-访问https://你的域名.com/https/github.com/souying/serverMmon/
+访问https://你的域名/https/github.com/souying/serverMmon/
 实际上会替换为https://github.com/souying/serverMmon/
 ![demo2](img/demo2.png)
 映射规则为/https/url映射到https接口，/http/url映射到http接口
@@ -60,7 +76,7 @@ If you think this tool is good, please gently click the **Star** button in the u
 ![github-download](img/github-download.png)
 
 例3    
-访问https://你的域名.com/https/www.google.com/search?q=vercel-api-proxy
+访问https://你的域名/https/www.google.com/search?q=vercel-api-proxy
 实际上会替换为https://www.google.com/search?q=vercel-api-proxy
 ![demo3](img/demo3.png)
 代理google搜索结果页面
